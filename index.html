@@ -57,38 +57,7 @@
 
     <!--=================SECCIÓN DEL HERO===========================-->
 
-    <section id="inicio" class="hero">
-
-        <div class="container hero-inicio">
-
-            <div class="hero-text">
-
-                <p class="eyebrow">Sweet moments, sweeter memories.</p>
-
-                <h1>Sweet Affair</h1>
-
-                <p class="lead">
-                    Descubre nuestros deliciosos postres, preparados con cariño
-                    para endulzar tus días y hacer especiales tus momentos.
-                </p>
-
-                <div class="hero-actions">
-
-                    <a href="#productos" class="btn primary">Ver productos</a>
-
-                    <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría realizar un pedido.')">
-                        Comprar por WhatsApp
-                    </button>
-
-                </div>
-
-                <p class="trust">
-                    <i data-lucide="heart"></i>
-                    Postres hechos con cariño para ti
-                </p>
-
-            </div>
-
+   
 
             <div class="hero-imagen">
 
@@ -101,3 +70,105 @@
             </div>
 
         </div>
+
+<section class="intro" aria-labelledby="intro-title">
+  <p class="intro-eyebrow">BIENVENIDOS A SWEET AFFAIR</p>
+  <h1 class="intro-title" id="intro-title">UN ANTOJO.<br><span>UNA DULCE EXPERIENCIA.</span></h1>
+  <p class="intro-description">Postres hechos con amor para convertir cada momento en algo especial.</p>
+</section> 
+
+
+<!--=========== Aquí vamos a colocar el video y las dos imagenes ==========->
+
+<!-- Galería principal: un video y dos imágenes -->
+    <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+      <!-- VIDEO -->
+      <article class="media-card media-cardvideo" data-video-card>
+        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+        <video
+          class="media-card media-card-video"
+          data-hover-video
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          poster="img/videoo.mp4"
+          aria-label="Video de presentación">
+          <source src=".img/videoo.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+
+
+        <!-- Capa oscura que permite leer el texto sobre el video -->
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <!-- Texto que aparece sobre el panel -->
+        <div class="media-card__content">
+          <p class="media-card__number"> PRESENTACIÓN</p>
+          <h2 class="media-card__title">MÁS ALLÁ<br>DE LOS LÍMITES</h2>
+          <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
+        </div>
+
+
+        <!-- Control visible en pantallas táctiles y accesible con teclado -->
+        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+        </button>
+      </article>
+
+
+      <!--  IMAGEN 1-->
+      <article class="media-card">
+        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/1img.png"
+          alt="Fotografía que representa mi trayectoria"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">02 / TRAYECTORIA</p>
+          <h2 class="media-card__title">EL CAMINO<br>RECORRIDO</h2>
+          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+      <!--  IMAGEN 2-->
+      <article class="media-card">
+        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+        <img
+          class="media-card__media media-card__image"
+          src="img/2img.png"
+          alt="Fotografía que representa mis proyectos"
+          loading="lazy">
+
+
+        <div class="media-card__shade" aria-hidden="true"></div>
+
+
+        <div class="media-card__content">
+          <p class="media-card__number">03 / PROYECTOS</p>
+          <h2 class="media-card__title">IDEAS QUE<br>INSPIRAN</h2>
+          <a class="media-card__link" href="#contacto">Ver proyectos <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+
+    </section>
+
+     </main>
+<!-- footer o pie de pagina-->
+ <!-- Pie de página -->
+  <footer class="site-footer">
+    <p>© <span id="current-year"></span> TU MARCA. Todos los derechos reservados.</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer> 
