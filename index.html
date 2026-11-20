@@ -47,128 +47,190 @@
     </header>
 
 
-    <main>
+    <main id="inicio">
 
         <!--=================CONTENIDO PRINCIPAL===========================-->
 
 
+        <!--=================SECCIÓN DEL HERO===========================-->
+
+        <div class="hero-imagen">
+
+            <img src="XXX" alt="Postres de Sweet Affair">
+
+            <span class="tag tag-love">Hecho con cariño</span>
+
+            <span class="tag tag-custom">Momentos más dulces</span>
+
+        </div>
+
+        <section class="intro" aria-labelledby="intro-title">
+            <p class="intro-eyebrow">BIENVENIDOS A SWEET AFFAIR</p>
+            <h1 class="intro-title" id="intro-title">UN ANTOJO.<br><span>UNA DULCE EXPERIENCIA.</span></h1>
+            <p class="intro-description">Postres hechos con amor para convertir cada momento en algo especial.</p>
+        </section>
+
+
+        <!--=========== Aquí vamos a colocar el video y las dos imagenes ==========-->
+
+        <!-- Galería principal: un video y dos imágenes -->
+        <section class="gallery" id="galeria" aria-label="Galería principal">
+
+
+            <!-- VIDEO -->
+            <article class="media-card media-cardvideo" data-video-card>
+                <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
+                <video
+                    class="media-card__media media-card__video"
+                    data-hover-video
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    poster="img/videoo.mp4"
+                    aria-label="Video de presentación">
+                    <source src="img/videoo.mp4" type="video/mp4">
+                    Tu navegador no puede reproducir este video.
+                </video>
+
+
+                <!-- Capa oscura que permite leer el texto sobre el video -->
+                <div class="media-card__shade" aria-hidden="true"></div>
+
+
+                <!-- Texto que aparece sobre el panel -->
+                <div class="media-card__content">
+                    <p class="media-card__number">01 / SWEET AFFAIR ES UNA REPOSTERÍA QUE CREA POSTRES DELICIOSOS CON INGREDIENTES DE CALIDAD Y MUCHO CUIDADO, PERFECTOS PARA COMPARTIR Y DISFRUTAR CADA MOMENTO</p>
+                    <h2 class="media-card__title">MÁS ALLÁ<br>DE LOS LÍMITES</h2>
+                    <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
+                </div>
+
+
+                <!-- Control visible en pantallas táctiles y accesible con teclado -->
+                <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
+                    <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
+                    <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
+                </button>
+            </article>
+
+
+            <!-- IMAGEN 1 -->
+            <article class="media-card">
+                <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
+                <img
+                    class="media-card__media media-card__image"
+                    src="img/1img.png"
+                    alt="Fotografía que representa mi trayectoria"
+                    loading="lazy">
+
+
+                <div class="media-card__shade" aria-hidden="true"></div>
+
+
+                <div class="media-card__content">
+                    <p class="media-card__number">02 / EL ARTE DE ENDULZAR</p>
+                    <h2 class="media-card__title">UN GUSTO<br>ESPECIAL</h2>
+                    <a class="media-card__link" href="#contacto">VER MENÚ COMPLETO <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+
+            <!-- IMAGEN 2 -->
+            <article class="media-card">
+                <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
+                <img
+                    class="media-card__media media-card__image"
+                    src="img/2img.png"
+                    alt="Fotografía que representa mis proyectos"
+                    loading="lazy">
+
+
+                <div class="media-card__shade" aria-hidden="true"></div>
+
+
+                <div class="media-card__content">
+                    <p class="media-card__number">03 / PEQUEÑOS DETALLES</p>
+                    <h2 class="media-card__title">DULCES<br>MOMENTOS</h2>
+                    <a class="media-card__link" href="#contacto">VER MENÚ COMPLETO <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+
+        </section> <!-- fin del mundo-->
+
+
+        <!--SECCION PRODUCTOS; SERVICIOS-->
+
+        <section id="productos" class="products">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Regalos con historia</p>
+                    <h2>Conoce nuestros productos</h2>
+                    <p class="lead">Elige un detalle especial y hazlo único.</p>
+                </div>
+
+
+                <!--PRODUCTO 1- TARJETA-->
+                <div class="product-grid">
+                    <article class="product-card reveal">
+                        <img src="img/1img.png" alt="Pastel decorado">
+                        <div class="product-body">
+                            <span class="tag">Favorito</span>
+                            <h3>Strawberry Dreams</h3>
+                            <p class="price">$800 MXN</p>
+                            <p class="description">Pastel de vainilla esponjoso, relleno de fresas frescas y crema suave, con un acabado delicado que endulza cualquier momento.</p>
+                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                        </div>
+                    </article>
+
+
+                    <article class="product-card reveal">
+                        <img src="img/img5.jpeg" alt="Brownie">
+                        <div class="product-body">
+                            <span class="tag">Favorito</span>
+                            <h3>Cocoa Brownie</h3>
+                            <p class="price">$80 MXN</p>
+                            <p class="description">Brownie artesanal de chocolate intenso, con una cubierta ligeramente crujiente y un interior suave y húmedo, lleno de trozos de chocolate derretido.</p>
+                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                        </div>
+                    </article>
+
+
+                      <article class="product-card reveal">
+                        <img src="img/img4.jpeg" alt="Cupcakes">
+                        <div class="product-body">
+                            <span class="tag">Favorito</span>
+                            <h3>Pink Bliss Cupcakes</h3>
+                            <p class="price">$250 MXN</p>
+                            <p class="description">Cupcakes suaves y esponjosos, decorados con betún cremoso y delicados detalles dulces. Pequeños antojos hechos para enamorar desde el primer bocado.</p>
+                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                        </div>
+                    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- footer o pie de pagina-->
+    <!-- Pie de página -->
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Sweet Affair. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+    </footer>
 
-    <!--=================SECCIÓN DEL HERO===========================-->
+</body>
 
-   
-
-            <div class="hero-imagen">
-
-                <img src="XXX" alt="Postres de Sweet Affair">
-
-                <span class="tag tag-love">Hecho con cariño</span>
-
-                <span class="tag tag-custom">Momentos más dulces</span>
-
-            </div>
-
-        </div>
-
-<section class="intro" aria-labelledby="intro-title">
-  <p class="intro-eyebrow">BIENVENIDOS A SWEET AFFAIR</p>
-  <h1 class="intro-title" id="intro-title">UN ANTOJO.<br><span>UNA DULCE EXPERIENCIA.</span></h1>
-  <p class="intro-description">Postres hechos con amor para convertir cada momento en algo especial.</p>
-</section> 
-
-
-<!--=========== Aquí vamos a colocar el video y las dos imagenes ==========->
-
-<!-- Galería principal: un video y dos imágenes -->
-    <section class="gallery" id="galeria" aria-label="Galería principal">
-
-
-      <!-- VIDEO -->
-      <article class="media-card media-cardvideo" data-video-card>
-        <!-- Sustituye el archivo de video por el tuyo. Se recomienda MP4  -->
-        <video
-          class="media-card media-card-video"
-          data-hover-video
-          muted
-          loop
-          playsinline
-          preload="metadata"
-          poster="img/videoo.mp4"
-          aria-label="Video de presentación">
-          <source src=".img/videoo.mp4" type="video/mp4">
-          Tu navegador no puede reproducir este video.
-        </video>
-
-
-        <!-- Capa oscura que permite leer el texto sobre el video -->
-        <div class="media-card__shade" aria-hidden="true"></div>
-
-
-        <!-- Texto que aparece sobre el panel -->
-        <div class="media-card__content">
-          <p class="media-card__number"> PRESENTACIÓN</p>
-          <h2 class="media-card__title">MÁS ALLÁ<br>DE LOS LÍMITES</h2>
-          <a class="media-card__link" href="#contacto">Descubrir <span aria-hidden="true">↗</span></a>
-        </div>
-
-
-        <!-- Control visible en pantallas táctiles y accesible con teclado -->
-        <button class="video-toggle" type="button" data-video-toggle aria-label="Reproducir video" aria-pressed="false">
-          <span class="video-toggle__icon" data-toggle-icon aria-hidden="true">▶</span>
-          <span class="video-toggle__text" data-toggle-text>Reproducir video</span>
-        </button>
-      </article>
-
-
-      <!--  IMAGEN 1-->
-      <article class="media-card">
-        <!-- Reemplaza trayectoria.jpg por el nombre de tu fotografía. -->
-        <img
-          class="media-card__media media-card__image"
-          src="img/1img.png"
-          alt="Fotografía que representa mi trayectoria"
-          loading="lazy">
-
-
-        <div class="media-card__shade" aria-hidden="true"></div>
-
-
-        <div class="media-card__content">
-          <p class="media-card__number">02 / TRAYECTORIA</p>
-          <h2 class="media-card__title">EL CAMINO<br>RECORRIDO</h2>
-          <a class="media-card__link" href="#contacto">Conocer más <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-
-
-      <!--  IMAGEN 2-->
-      <article class="media-card">
-        <!-- Reemplaza proyectos.jpg por el nombre de tu fotografía. -->
-        <img
-          class="media-card__media media-card__image"
-          src="img/2img.png"
-          alt="Fotografía que representa mis proyectos"
-          loading="lazy">
-
-
-        <div class="media-card__shade" aria-hidden="true"></div>
-
-
-        <div class="media-card__content">
-          <p class="media-card__number">03 / PROYECTOS</p>
-          <h2 class="media-card__title">IDEAS QUE<br>INSPIRAN</h2>
-          <a class="media-card__link" href="#contacto">Ver proyectos <span aria-hidden="true">↗</span></a>
-        </div>
-      </article>
-
-
-    </section>
-
-     </main>
-<!-- footer o pie de pagina-->
- <!-- Pie de página -->
-  <footer class="site-footer">
-    <p>© <span id="current-year"></span> TU MARCA. Todos los derechos reservados.</p>
-    <a href="#inicio">Volver arriba ↑</a>
-  </footer> 
+</html> 

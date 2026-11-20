@@ -1,122 +1,116 @@
 
 /*RESET PAGINA */
 
-*{
-    margin:0;
-    padding:0;
-     
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root{
-    --rosa:#EFAEAF; 
-    --crema:#FFF8F0; 
-    --lila:#C8B4D5;
-     --lila-oscuro: #8F789F;  
+:root {
+    --rosa: #EFAEAF;
+    --crema: #FFF8F0;
+    --lila: #C8B4D5;
+    --lila-oscuro: #8F789F;
+    --page-gutter: 24px;
+    --color-panel: #1a1a1a;
 }
 
-html 
-{ scroll-behavior: smooth; 
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: "Redaction 10", serif;
-  color: #8F789F;             
-  background: #FFF8F0;
-  overflow-x: hidden;
+    margin: 0;
+    font-family: "Redaction 10", serif;
+    color: #8F789F;
+    background: #FFF8F0;
+    overflow-x: hidden;
 }
 
-ul{
+ul {
     list-style: none;
-    margin: 0; 
+    margin: 0;
     padding: 0;
-
 }
 
-a{
+a {
     text-decoration: none;
-     color: inherit;
+    color: inherit;
 }
 
-img{
-     max-width: 100%;
-      display: block;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-.container { width: min(1100px, calc(100% - 2rem));
-     margin: 0 auto; }
+.container {
+    width: min(1100px, calc(100% - 2rem));
+    margin: 0 auto;
+}
 
- 
+
 /* Encabezado */
-.header-sweet-Affair{
-  position: sticky;
-  top: 0;
-  z-index: 100;
- background-color: #3f0a38; 
-   /* Cambia por el color de fondo de tu marca */
-  border-bottom: 1px solid #3f0a38;
+.header-sweet-Affair {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #3f0a38;
+    border-bottom: 1px solid #3f0a38;
 }
-
- 
-
 
 .header-inicio {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 76px;
-  gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 76px;
+    gap: 1.5rem;
 }
 
-/* logo imágen*/
-
+/* logo imágen */
 .logo-sweet-Affair {
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0; /* Evita que el menú aplaste el logo */
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.logo-sweet-Affair img { 
-  height: 48px;       /* Ajusta entre 40px y 60px según el diseño de tu logo */
-  width: auto;     
-  max-width: 200px; 
-  object-fit: contain;
-  display: block;
+.logo-sweet-Affair img {
+    height: 48px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    display: block;
 }
 
-     * Navegación y lista en horizontal */
-.nav-Sweet-Affair{
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+/* Navegación y lista en horizontal */
+.nav-Sweet-Affair {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
-
 
 .nav-Sweet-Affair ul {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-
 
 .nav-Sweet-Affair a {
-  text-decoration: none;
-  color: #8F789F; 
-  font-weight: 500;
-  transition: color 0.2s ease;
+    text-decoration: none;
+    color: #8F789F;
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
-
 .nav-Sweet-Affair a:hover {
-  color: #EFAEAF; /* Color principal de  TU MARCA*/
+    color: #EFAEAF;
 }
 
 
 /* Botón de WhatsApp */
-
 .btn.primary {
     display: inline-flex;
     align-items: center;
@@ -124,8 +118,8 @@ img{
     padding: 0.65rem 1.25rem;
     border: none;
     border-radius: 9999px;
-    background-color: var(--lavanda);
-    color: var(--texto);
+    background-color: var(--lila);
+    color: #3f0a38;
     font-weight: 600;
     cursor: pointer;
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -143,206 +137,194 @@ img{
 
 
 /* Ajuste básico para celulares */
-
 @media (max-width: 768px) {
     .header-inicio {
         flex-wrap: wrap;
         padding-block: 0.75rem;
     }
 
-    .nav-Squishyland {
+    .nav-Sweet-Affair {
         width: 100%;
         justify-content: space-between;
         gap: 1rem;
     }
 
-    .nav-Squishyland ul {
+    .nav-Sweet-Affair ul {
         gap: 0.85rem;
         font-size: 0.9rem;
     }
 }
 
 .intro {
-  padding: clamp(48px, 8vh, 90px) var(--page-gutter) 38px;
-  text-align: center;
+    padding: clamp(48px, 8vh, 90px) var(--page-gutter) 38px;
+    text-align: center;
 }
 
 .intro-eyebrow,
 .contact-eyebrow {
-  margin-bottom: 18px;
-  color: var(--lila-oscuro);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 4px;
+    margin-bottom: 18px;
+    color: var(--lila-oscuro);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 4px;
 }
 
 .intro-title {
-  font-size: clamp(38px, 6vw, 78px);
-  font-weight: 800;
-  line-height: 0.98;
-  letter-spacing: -3px;
-  color: #8F789F;
+    font-size: clamp(38px, 6vw, 78px);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -3px;
+    color: #8F789F;
 }
 
 .intro-title span {
-  color: #EFAEAF;
+    color: #EFAEAF;
 }
 
 .intro-description {
-  max-width: 520px;
-  margin: 20px auto 0;
-  color: #8F789F;
-  font-size: 12px;
-  line-height: 1.8;
+    max-width: 520px;
+    margin: 20px auto 0;
+    color: #8F789F;
+    font-size: 12px;
+    line-height: 1.8;
 }
 
 
-
-
-
-
-
-
-
-
-
-gallery {
-  width: 100%;
-  padding: 0 var(--page-gutter);
-  display: grid;
-  /* El panel de video es un poco más ancho que las dos imágenes. */
-  grid-template-columns: 1.25fr 1fr 1fr;
-  gap: 12px;
-  align-items: stretch;
+/* =========================================================
+   GALERÍA DE 3 COLUMNAS
+   ========================================================= */
+.gallery {
+    width: 100%;
+    padding: 0 var(--page-gutter);
+    display: grid;
+    /* El panel de video es un poco más ancho que las dos imágenes. */
+    grid-template-columns: 1.25fr 1fr 1fr;
+    gap: 12px;
+    align-items: stretch;
 }
 
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Cada tarjeta funciona como una ventana visual. */
 .media-card {
-  min-width: 0;
-  height: clamp(440px, 65vw, 690px);
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  background: var(--color-panel);
+    min-width: 0;
+    height: clamp(440px, 65vw, 690px);
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: var(--color-panel);
 }
-
 
 /* Imagen o video ocupan todo el espacio de la tarjeta. */
 .media-card__media {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-  /* Estado inicial: desaturado y un poco oscuro. */
-  filter: grayscale(100%) brightness(0.62) contrast(0.95);
-  transform: scale(1.015);
-  transition:
-    filter 700ms ease,
-    transform 1000ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    /* Estado inicial: desaturado y un poco oscuro. */
+    filter: grayscale(100%) brightness(0.62) contrast(0.95);
+    transform: scale(1.015);
+    transition:
+        filter 700ms ease,
+        transform 1000ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-
 
 /* Capa gris/negra encima de la fotografía para crear el aspecto cinematográfico. */
 .media-card__shade {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.04) 5%,
-    rgba(0, 0, 0, 0.12) 42%,
-    rgba(0, 0, 0, 0.78) 100%
-  );
-  opacity: 0.92;
-  transition: opacity 600ms ease;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.04) 5%,
+        rgba(0, 0, 0, 0.12) 42%,
+        rgba(0, 0, 0, 0.78) 100%
+    );
+    opacity: 0.92;
+    transition: opacity 600ms ease;
 }
-
 
 /* Texto y enlaces se sitúan por encima de la capa oscura. */
 .media-card__content {
-  position: absolute;
-  z-index: 2;
-  right: 24px;
-  bottom: 30px;
-  left: 24px;
-  transition: transform 500ms ease;
+    position: absolute;
+    z-index: 2;
+    right: 24px;
+    bottom: 30px;
+    left: 24px;
+    transition: transform 500ms ease;
 }
-
 
 .media-card__number {
-  margin-bottom: 14px;
-  color: #d0d0d0;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 2.5px;
+    margin-bottom: 14px;
+    color: #d0d0d0;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
 }
-
 
 .media-card__title {
-  color: #ffffff;
-  font-size: clamp(21px, 2.2vw, 35px);
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -1px;
+    color: #ffffff;
+    font-size: clamp(21px, 2.2vw, 35px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -1px;
 }
-
 
 .media-card__link {
-  width: fit-content;
-  margin-top: 22px;
-  padding-bottom: 7px;
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.65);
-  color: #ffffff;
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  transition: gap 250ms ease, border-color 250ms ease;
+    width: fit-content;
+    margin-top: 22px;
+    padding-bottom: 7px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    transition: gap 250ms ease, border-color 250ms ease;
 }
-
 
 .media-card__link:hover,
 .media-card__link:focus-visible {
-  gap: 25px;
-  border-color: #ffffff;
+    gap: 25px;
+    border-color: #ffffff;
 }
 
-
 .media-card__link span {
-  font-size: 16px;
-  line-height: 0.8;
+    font-size: 16px;
+    line-height: 0.8;
 }
 
 
 /* ---------------------------------------------------------
-  EFECTO HOVER: RECUPERAR COLOR Y ACERCAR LA IMAGEN
+   EFECTO HOVER: RECUPERAR COLOR Y ACERCAR LA IMAGEN
    --------------------------------------------------------- */
 .media-card:hover .media-card__media,
 .media-card:focus-within .media-card__media,
 .media-card.is-playing .media-card__media {
-  filter: grayscale(0%) brightness(1) contrast(1);
-  transform: scale(1.07);
+    filter: grayscale(0%) brightness(1) contrast(1);
+    transform: scale(1.07);
 }
-
 
 .media-card:hover .media-card__shade,
 .media-card:focus-within .media-card__shade,
 .media-card.is-playing .media-card__shade {
-  opacity: 0.72;
+    opacity: 0.72;
 }
-
 
 .media-card:hover .media-card__content,
 .media-card:focus-within .media-card__content {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 
@@ -350,61 +332,212 @@ gallery {
    BOTÓN DE REPRODUCCIÓN DEL VIDEO
    ========================================================= */
 .video-toggle {
-  position: absolute;
-  z-index: 4;
-  top: 20px;
-  right: 20px;
-  min-height: 38px;
-  padding: 0 13px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
-  border-radius: 30px;
-  background: rgba(0, 0, 0, 0.35);
-  color: #ffffff;
-  display: none;
-  align-items: center;
-  gap: 9px;
-  cursor: pointer;
-  backdrop-filter: blur(8px);
-  transition: background 200ms ease;
+    position: absolute;
+    z-index: 4;
+    top: 20px;
+    right: 20px;
+    min-height: 38px;
+    padding: 0 13px;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.35);
+    color: #ffffff;
+    display: none;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background 200ms ease;
 }
-
 
 .video-toggle:hover,
 .video-toggle:focus-visible {
-  background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.75);
 }
-
 
 .video-toggle__icon {
-  font-size: 10px;
+    font-size: 10px;
+}
+
+.video-toggle__text {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* En equipos que no tienen hover, el botón se muestra siempre. */
+@media (hover: none), (pointer: coarse) {
+    .video-toggle {
+        display: inline-flex;
+    }
+}
+
+/* También se muestra al navegar con teclado. */
+.media-card--video:focus-within .video-toggle {
+    display: inline-flex;
 }
 
 
-.video-toggle__text {
-  font-size: 9px;
+/* ---------- Productos ---------- */
+.products {
+    padding: 4rem 0;
+}
+
+.product-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.product-card {
+    background: #edd1e9;
+    border: 1px solid var(--lila);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(82, 56, 43, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 34px rgba(82, 56, 43, 0.13);
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1.18 / 1;
+    object-fit: cover;
+}
+
+.product-body {
+    padding: 1.25rem;
+}
+
+.product-body h3 {
+    font-size: 1.2rem;
+    margin-top: 0.7rem;
+}
+
+.product-body .price {
+    color: #3f0a38;
+    font-weight: 700;
+    margin-top: 0.2rem;
+}
+
+.product-body .description {
+    color: var(--lila-oscuro);
+    margin-top: 0.7rem;
+    min-height: 52px;
+}
+
+/* ---------- Botones ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  min-height: 48px;
+  padding: 0 1.5rem;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn.primary 
+{ background: var(--coral); color: #fff; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22); }
+.btn.primary:hover
+{ background: var(--coral-dark); transform: translateY(-2px); }
+
+
+.btn.outline 
+{ background: #fff; color: var(--coral-dark); border: 1px solid #e5b5a9; }
+.btn.outline:hover
+ { background: #fff1ec; transform: translateY(-2px); }
+
+
+.btn.card { border: 1px solid #e9b8ac; background: #fff7f3; color: var(--coral-dark); width: 100%; margin-top: 1rem; }
+.btn.card:hover { background: var(--coral); color: #fff; }
+
+
+.btn.butter { background: var(--butter); color: #563716; }
+.btn.butter:hover { background: #ffe597; }
+
+
+.btn.whatsapp { background: var(--sage-dark); color: #c6ef84; }
+
+
+button:focus-visible, a:focus-visible { outline: 3px solid #1e6b72; outline-offset: 3px; }
+
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  padding: 2.5rem var(--page-gutter);
+  text-align: center;
+  background: #e5b5a9;
+  color: var(--verde);
+}
+
+
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+
+.site-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid var(--verde);
+  border-radius: 999px;
+  font-size: 0.85rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+
+.site-footer a:hover {
+  background-color: var(--verde);
+  color: var(--cream);
+  transform: translateY(-2px);
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.75rem;
+}
+
+
+.section-heading .eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: var(--verde);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 
-/* En equipos que no tienen hover, el botón se muestra siempre. */
-@media (hover: none), (pointer: coarse) {
-  .video-toggle {
-    display: inline-flex;
-  }
+.section-heading h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.15;
+  margin: 0.25rem 0 0.75rem;
 }
 
 
-/* También se muestra al navegar con teclado. */
-.media-card--video:focus-within .video-toggle {
-  display: inline-flex;
+.section-heading .lead {
+  max-width: 520px;
+  margin: 0 auto;
+  color: var(--verde);
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
-
-
-
-.site-footer {
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
-  }
