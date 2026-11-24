@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script> 
 
     <title>Sweet Affair | Repostería</title>
 
@@ -183,7 +184,7 @@
                         </div>
                     </article>
 
-
+ <!--PRODUCTO 2- TARJETA-->
                     <article class="product-card reveal">
                         <img src="img/img5.jpeg" alt="Brownie">
                         <div class="product-body">
@@ -196,6 +197,7 @@
                     </article>
 
 
+                     <!--PRODUCTO 3- TARJETA-->
                       <article class="product-card reveal">
                         <img src="img/img4.jpeg" alt="Cupcakes">
                         <div class="product-body">
@@ -207,7 +209,41 @@
                         </div>
                     </article>
 
+                    <!--PRODUCTO 4- TARJETA-->
+                      <article class="product-card reveal">
+                        <img src="img/4.jpeg" alt="mini cheesecakes individuales">
+                        <div class="product-body">
+                            <span class="tag">Favorito</span>
+                            <h3>mini cheesecakes individuales</h3>
+                            <p class="price">$100 MXN</p>
+                            <p class="description">pequeños cheesecakes cremosos con base de galleta y deliciosos toppings de fresa, frutos rojos, chocolate u Oreo. Perfectos para disfrutar y compartir cualquier momento especial.</p>
+                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                        </div>
+                    </article>
 
+                    <!--PRODUCTO 5- TARJETA-->
+                      <article class="product-card reveal">
+                        <img src="img/5.jpeg" alt="galletas decoradas sweet">
+                        <div class="product-body">
+                            <span class="tag">Favorito</span>
+                            <h3>galletas decoradas</h3>
+                            <p class="price">$35 MXN</p>
+                            <p class="description">galletas de mantequilla suaves y deliciosas, decoradas con glaseados en tonos pastel y diseños personalizados. Ideales para regalar o acompañar momentos especiales.</p>
+                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                        </div>
+                    </article>
+
+                     <!--PRODUCTO 6- TARJETA-->
+                      <article class="product-card reveal">
+                        <img src="img/6.jpeg" alt="Cake jar">
+                        <div class="product-body">
+                            <span class="tag">Favorito</span>
+                            <h3>Sweet cake jar</h3>
+                            <p class="price">$65 MXN</p>
+                            <p class="description"> deliciosas capas de bizcocho suave y crema, servidas en pequeños frascos con diferentes combinaciones de sabores y decoraciones. Perfectos para disfrutar en cualquier momento.</p>
+                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                        </div>
+                    </article>
 
 
 
@@ -222,6 +258,128 @@
             </div>
         </section>
 
+<!--sección diferenciadores-->
+
+<section id="diferenciador" class="unicos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>¿Por qué escogernos?</h2>
+        </div>
+
+
+        <div class="benefits-grid">
+           <!--diferenciador 1-->
+<article class="benefit-card reveal">
+  <div class="benefit-icon"><i data-lucide="circle-check-big"></i></div>
+  <h3>Hechos con dedicación</h3>
+  <p>Cada postre se prepara con cuidado y atención a cada detalle.</p>
+</article>
+
+<!--diferenciador 2-->
+<article class="benefit-card reveal">
+  <div class="benefit-icon"><i data-lucide="lightbulb"></i></div>
+  <h3>Diseños únicos</h3>
+  <p>Presentaciones especiales que hacen de cada postre algo único.</p>
+</article>
+
+<!--diferenciador 3-->
+<article class="benefit-card reveal">
+  <div class="benefit-icon"><i data-lucide="crown"></i></div>
+  <h3>Productos personalizados</h3>
+  <p>Adaptamos nuestros postres a tus gustos y ocasiones especiales.</p>
+</article>
+
+<!--diferenciador 4-->
+<article class="benefit-card reveal">
+  <div class="benefit-icon"><i data-lucide="square-star"></i></div>
+  <h3>Momentos especiales</h3>
+  <p>Convertimos cada dulce en una experiencia para recordar.</p>
+</article>
+
+</div>
+      </div>
+</section>
+
+
+
+<script src="js/script.js"></script> 
+
+
+
+<!--testimonios-->
+
+<section class="testimonials">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Momentos dulces</p>
+      <h2>Lo que dicen nuestros clientes</h2>
+    </div>
+
+    <div class="testimonial-viewport">
+      <div id="testimonial-track" class="testimonial-track">
+
+        <!--testimonio 1-->
+        <article class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img class="avatar" src="img/7.jpeg" alt="Cliente de Sweet Affair">
+              <div>
+                <p class="name">Mariana R.</p>
+                <p class="occasion">Pedido de cumpleaños</p>
+              </div>
+            </div>
+            <p class="quote">"Todo estaba delicioso, además de que la presentación fue hermosa. Sin duda volvería a pedir."</p>
+            <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+          </div>
+        </article>
+
+        <!--testimonio 2-->
+        <article class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img class="avatar" src="img/8.jpeg" alt="Cliente de Sweet Affair">
+              <div>
+                <p class="name">Sofía M.</p>
+                <p class="occasion">Mini cheesecakes</p>
+              </div>
+            </div>
+            <p class="quote">"Me encantaron los cheesecakes, estaban súper cremosos y tenían una presentación preciosa."</p>
+            <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+          </div>
+        </article>
+
+        <!--testimonio 3-->
+        <article class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img class="avatar" src="img/9.jpeg" alt="Cliente de Sweet Affair">
+              <div>
+                <p class="name">Gael García.</p>
+                <p class="occasion">Galletas personalizadas</p>
+              </div>
+            </div>
+            <p class="quote">"Me encantó que pudieran personalizar mi pedido. Todo quedó justo como lo imaginaba."</p>
+            <div class="stars" aria-label="Cinco estrellas">★★★★★</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
     <!-- footer o pie de pagina-->
@@ -230,6 +388,8 @@
         <p>© <span id="current-year"></span> Sweet Affair. Todos los derechos reservados.</p>
         <a href="#inicio">Volver arriba ↑</a>
     </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 
