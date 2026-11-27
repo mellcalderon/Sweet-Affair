@@ -180,7 +180,7 @@
                             <h3>Strawberry Dreams</h3>
                             <p class="price">$800 MXN</p>
                             <p class="description">Pastel de vainilla esponjoso, relleno de fresas frescas y crema suave, con un acabado delicado que endulza cualquier momento.</p>
-                            <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+                            <button type="button" class="btn card" onclick="openModal('modal-postres')">Ver producto</button>
                         </div>
                     </article>
 
@@ -385,6 +385,7 @@
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/melisa_calderonn?dmpr=aWNtOWp1djBjMHM1&utm_source=qr/" target="_blank" rel="noopener noreferrer">@melisa_calderonn</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Sweet Affair</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:hola@dulcedetalle.mx">jm.calderon@ebc.edu.mx</a></li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/QFvv6pju2F6B7sMMA"> Escuela Bancaria y Conercial</a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 7:00 a 21:00</li>
           </ul>
         </aside>
@@ -404,7 +405,65 @@
     <footer class="site-footer">
         <p>© <span id="current-year"></span> Sweet Affair. Todos los derechos reservados.</p>
         <a href="#inicio">Volver arriba ↑</a>
-    </footer>
+    
+    
+     
+     
+      </footer>
+
+<!--modal para los productos o servicios etc.-->
+<div id="modal-postres" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-postres-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="/img/1img.png" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-postres')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-postres-title">Strawberry Dreams</h2>
+        <p class="price">$800 MXN</p>
+        <p>Un pastel suave y delicioso, acompañado de fresas frescas y una combinación perfecta de sabores dulces. Ideal para compartir y disfrutar momentos especiales.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Mensaje especial sobre el pastel</li>
+          <li>Decoración con fresas</li>
+          <li>Color y estilo de betún</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un pastel de fresas. ¿Me pueden ayudar a personalizarlo?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- modal para los productos o servicios etc. num 2 -->
+<div id="modal-bronwnies" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-bronwnies-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="/img/2img.png" alt="Brownie artesanal de chocolate.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-bronwnies')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-bronwnies-title">Cocoa Brownie</h2>
+        <p class="price">$80 MXN</p>
+        <p>Brownie artesanal de chocolate intenso, con una cubierta ligeramente crujiente y un interior suave y húmedo, lleno de trozos de chocolate derretido.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Mensaje especial</li>
+          <li>Extra de chocolate</li>
+          <li>Presentación para regalo</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir un Cocoa Brownie. ¿Me pueden ayudar con mi pedido?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
 
     <script src="js/script.js"></script>
 
